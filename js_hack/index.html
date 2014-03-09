@@ -106,8 +106,9 @@
                         window.clearInterval(interval);
                         window.clearInterval(interval2);
                         var duration = (end_time - start_time)/1000;
-                        var dialog = $("#dialog > p");
-                        dialog.append("Congrats. It took you " + duration + " seconds." );
+                        var dialog = $("#dialog");
+                        var dialog_text = $("#dialog > p");
+                        dialog_text.append("Congrats. It took you " + duration + " seconds." );
                         dialog.dialog({
                             dialogClass: "no-close"
                         })
